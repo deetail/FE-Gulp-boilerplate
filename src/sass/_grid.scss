@@ -1,0 +1,52 @@
+
+body {
+  text-align: center;
+}
+div, section, p {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: inline-block;
+  @include mq(xsmallscreens) {
+    width: 310px;
+  }
+  @include mq(smallscreens) {
+    width: 508px;
+  }
+  @include mq(mediumscreens) {
+    width: 508px;
+  }
+  @include mq(largescreens) {
+    width: 508px;
+  }
+  @include mq(xlargescreens) {
+    width: 508px;
+  }
+  @include mq(xxlargescreens) {
+    width: 508px;
+  }
+}
+
+.row {
+  width: 100%;
+  display: block;
+  margin: 0;
+  text-align: left;
+
+  &:first-child {
+    margin: 0;
+    padding: 0;
+    > div {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  > div {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    float: left;
+  }
+}

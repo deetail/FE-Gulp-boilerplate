@@ -1,0 +1,138 @@
+
+html {
+  .row:last-child > div {
+    //min-height: 317px;
+    padding: 40px 23px 30px;
+  }
+  #logo {
+    margin-left: 22px;
+    background-image: url(../img/cobrand_generic_logo.png);
+    background-size: 102px 66px;
+    //@include mq(retina) {
+    //  background-image: url(../img/cobrand_generic_logo@2x.png);
+    //}
+    width: 100px;
+    height: 70px;
+    display: block;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.dc, &.dcse, &.dcno {
+    background-color: #000;
+    color: #000;
+    font-family: arial, helvetica, clean, sans-serif;
+    .row:first-child > div {
+      background-color: rgba(45, 45, 45, 0.77);
+    }
+    .row > div {
+      background-color: rgba(255, 255, 255, 1);
+    }
+    #logo {
+      background-image: url(../img/dcse_logo.png);
+      background-size: 175px 45px;
+      //@include mq(retina) {
+      //  background-image: url(../img/dcse_logo@2x.png);
+      //}
+      width: 175px;
+      height: 70px;
+      margin-left: 22px;
+      display: block;
+      content: '';
+    }
+    h1, h2, h3, h4, h5 {
+      font-family: "Gill Sans W01 Medium", Arial, "Century Schoolbook", "Times New Roman", Times, serif;
+      font-weight: 500;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+  &.ec, &.ecse, &.ecno, &.ecdk {
+    background: url(../img/eurocard_bg.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+
+    .row:first-child > div {
+      background-color: rgba(250, 249, 249, 0.7);
+    }
+    .row > div {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    #logo {
+      background-image: url(../img/ecse_logo.png);
+      background-size: 184px 18px;
+      //@include mq(retina) {
+      //  background-image: url(../img/ecse_logo@2x.png);
+      //}
+      width: 185px;
+      margin-left: 22px;
+      display: block;
+      content: '';
+    }
+  }
+
+  // Generic Co Brand...
+  &.cb, &.cbse, &.cbno, &.cbdk {
+    background-color: #f4f4f4;
+    .wrapper {
+      //width: 522px;
+    }
+
+    .wrapper .row:last-child {
+      &:after {
+        z-index: 1;
+        margin-left: -6px;
+        content: "";
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-image: url(../img/shadow.png);
+        background-size: 320px 25px;
+        width: 320px;
+        height: 25px;
+        @include mq(smallscreens) {
+          background-size: 522px 25px;
+          width: 522px;
+          height: 25px;
+        }
+        
+        //@include mq(retina) {
+        //  background-image: url(../img/shadow@2x.png);
+        //}
+        
+      }
+    }
+
+    .row > div {
+      background-color: #fff;
+    }
+
+    .row:first-child > div {
+      margin-bottom: 3px;
+    }
+
+    #logo {
+      background-image: url(../img/cobrand_generic_logo.png);
+      background-size: 102px 66px;
+      //@include mq(retina) {
+      //  background-image: url(../img/cobrand_generic_logo@2x.png);
+      //}
+      &.sase {
+        background-image: url(../img/sase_logo.png);
+        background-size: 102px 66px;
+        //@include mq(retina) {
+        //  background-image: url(../img/sase_logo@2x.png);
+        //}
+      }
+      height: 90px;
+      display: block;
+      content: '';
+    }
+  }
+
+}
